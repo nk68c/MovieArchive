@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project 1</title>
+  <link rel="stylesheet" href="css/style.css">
+    <script id="grid-movie-template" type="text/html"> 
+        <div class='gridMovieData'>
+            <img class='gridMoviePic' src='{{photo}}'>
+            <img class="gridhd" src="data/HD.png" style="display: none">            
+            <div class='gridMovieName'> 
+                <div class="top">
+                <p class='name'>{{title}}</p>
+                <p class='date'>({{year}})</p></div>
+            </div>
+            <p class="gridMovieStarring" >Starring: <br>{{starring}} </p>
+        </div> 
+    </script>
+    <script id="list-movie-template" type='text/html'> 
+            <div class='listMovieData'>                
+            <img class="listMoviePic" src="{{photo}}">
+            <img class="listhd" src="data/HD.png" style="display: none">                
+            <p class="listMovieTitle"> {{title}} </p>
+            <p class="listMovieYear"> ({{year}}) </p> 
+            <p class="listStarring"><b> Starring: </b>{{starring}} </p> 
+            <div class="listRating"><b> Rating: </b>
+                <img class='star' src="data/regular_star.png">
+                <img class='star' src="data/regular_star.png">
+                <img class='star' src="data/regular_star.png">
+                <img class='star' src="data/regular_star.png">
+                <img class='star' src="data/regular_star.png">
+            </div>
+            <p class="listMovieDesc"> {{description}} </p>
+                
+        </div>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="js/movies.js"></script>
+    <script src="js/htmlMaker.js"></script>
+    <script src="js/main.js"></script>
+  
+  
+  
+  
+</head>
+<body>
+  <div> <!-- page div -->
+	<div class="banner"> <!--banner/search -->
+            <img src="data/movie.png" class="head_icon" alt="logo pic">
+            <p class="logo"> RENT A MOVIE </p>
+            <input class="search" type="text" placeholder="Search for movies here">
+            <input class="search_button" type="button" value="Search">
+            <div id="suggestions_box" class="suggestions"></div>
+        
+        </div>
+	<div class="view"> <!--sort/view -->
+            Sort By: 
+            <select class="sort_selector">
+                <option value="year">Year</option>
+                <option value="rating">Rating</option>
+            </select>
+            <img src="data/list.jpg" class="list_view_button">
+            <img src="data/grid_pressed.jpg" class="grid_view_button">
+            
+        </div>
+      <div class="gridMovies"> <!--movies--> </div>                               
+	
+  </div>
+</body>
+</html>

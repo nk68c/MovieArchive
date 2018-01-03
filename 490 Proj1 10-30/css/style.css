@@ -1,0 +1,248 @@
+.banner {
+    height:50px;
+    width: 100%;
+    background-color: rgb(245,245,245);
+}
+.head_icon {
+    height: 45px;
+    width: 45px;
+    
+}
+@font-face{
+    font-family: logoFont;
+    src: url(../fonts/oleo.woff);
+    
+}
+p.logo {
+    position: absolute;
+    top: 5px;
+    display:inline-block;
+    font-family: logoFont;
+    padding-right: 20px;
+    font-size: 18px;
+    
+}
+
+.search{
+    position:absolute;
+    top:25px;
+    left: 230px;
+    width:411px;
+}
+.search_button{
+    position:absolute;
+    top:25px;
+    left: 645px;
+    background-color: lightskyblue;
+    color:white;
+    font-weight: bold;
+}
+.view {
+    margin-bottom: 20px;
+}
+
+div.gridMovies{
+    
+    
+}
+div.listMovies{
+    
+}
+
+div.gridMovieData{
+        position:relative;
+        float:left;
+	height: 200px;
+	width: 200px;
+	margin-top: 30px;
+	margin-left: 30px;
+	border: solid 1px lightgray; 
+        
+	
+}
+
+
+
+img.gridhd{
+	position: absolute;
+	height: 30px;
+	width: 40px;
+	top: 15px;
+	left: 15px;
+}
+img.listhd{
+	position: absolute;
+	height: 30px;
+	width: 40px;
+	top: 28px;
+	left: 25px;
+}
+
+img.gridMoviePic{
+	padding: 5px;
+	height: 190px;
+	width: 190px;
+}
+div.gridMovieName{
+        position: relative;
+        bottom: 55px;
+        left: 5px;
+        
+        
+        width: 190px;
+	height: 40px;
+	background-color:rgba(0,0,0,0.3);
+        transition: 1s; /*Standard, IE 10*/
+         -webkit-transition: 1s; /* For Chrome, Safari*/
+         -moz-transition: 1s; /* For Firefox*/
+         -o-transition:1s; /* For Opera*/
+	
+        
+}
+div.gridMovieData p.name{
+    margin: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    text-align: center;  
+}
+div.gridMovieData p.date{
+    margin: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    text-align: center;  
+}
+
+p.gridMovieStarring{
+        position:absolute;
+        bottom:-8px;
+        left:5px;
+	height: 0px;
+        width:190px;
+	background-color: black;
+        font-weight: bold;
+        font-size: 12px;
+	opacity: 0.7;
+        text-align:center;
+        transition: 1s; /*Standard, IE 10*/
+         -webkit-transition: 1s; /* For Chrome, Safari*/
+         -moz-transition: 1s; /* For Firefox*/
+         -o-transition:1s; /* For Opera*/
+         color:transparent;
+}
+div.gridMovieData:hover p.gridMovieStarring{    
+    position:absolute;
+    bottom:-8px;
+    left:5px;
+    height:40px;
+    opacity:1;
+    color:white;
+}
+div.gridMovieData:hover div.gridMovieName{
+    position:relative;
+    bottom:120px;
+    height:105px;
+    padding-top:8px;
+}
+
+
+div.listMovieData{
+    position: relative;
+    height: 260px;
+    width: 800px;
+    border: 1px solid lightgray;
+}
+
+
+img.listMoviePic{
+	float:left;
+        margin-top: 15px;
+        margin-left: 10px;
+	height: 220px;
+	width: 220px;
+	padding: 5px;
+        border: 1px solid;
+        border-color: rgb(245,235,245);
+	
+}
+p.listMovieTitle{
+        float:left;
+        margin-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+p.listMovieYear{
+    
+    float:left;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: gray;
+}
+
+p.listStarring{
+    position:absolute;
+    top: 40px;
+    left: 250px;
+    
+}
+div.listRating{
+    vertical-align: text-top;
+    position:absolute;
+    top: 85px;
+    left: 250px;
+}
+
+
+p.listMovieDesc{
+    position:absolute;
+    top: 100px;
+    left: 250px;
+    
+    background-color: rgb(236,255,255);
+    width: 500px;
+    line-height: 1.5;
+    border: 1px lightgray;
+    
+}
+
+img.star{
+    height:20px;
+    width:20px;
+}
+
+.view img{
+    float:right;
+}
+.view img:hover{
+    cursor:pointer;
+}
+.search_button:hover{
+    cursor:pointer;
+}
+
+div.suggestions{
+    position:absolute;
+    top:47px;
+    left: 230px;
+    z-index:50;
+    border-color:lightgray;
+    background-color:white;
+    border-style:solid;
+    border-width: 1px;
+    width:470px;
+    overflow:auto;
+    display:none;
+}
+
+div.sub_suggestions{
+    width:458px;
+    border: 1px solid lightgray;
+    padding:5px;
+}
+div.sub_suggestions:hover{
+    background-color:rgb(245,245,245);
+    cursor:pointer;
+}
